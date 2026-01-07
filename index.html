@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="game-container">
+    <h1 class="title">Dice Game</h1>
+
+    <!-- Player 1 Frame -->
+    <div class="player-frame player1">
+      <div class="player player1">
+        <h2>Player 1 (User):</h2>
+        <div class="dice" id="player1-dice-1"></div>
+        <div class="dice" id="player1-dice-2"></div>
+      </div>
+    </div>
+
+    <!-- Player 2 Frame -->
+    <div class="player-frame player2">
+      <div class="player player2">
+        <h2>Player 2 (AI):</h2>
+        <div class="dice" id="player2-dice-1"></div>
+        <div class="dice" id="player2-dice-2"></div>
+      </div>
+    </div>
+
+    <button id="roll-btn">Roll Dice</button>
+    <div id="result"></div>
+
+    <!-- Horizontal line separating footer -->
+    <hr class="separator">
+    
+    <!-- Footer with points and shop button -->
+    <div class="footer">
+      <div class="footer-content">
+        <span>Points: <span id="player1-points">0</span></span>
+        <a href="shop.html" class="shop-btn">
+          <i class="fas fa-store"></i> Shop
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
